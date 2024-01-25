@@ -9,7 +9,7 @@ license = "LGPL-2.1-only"
 homepage = "https://TO-DO/"
 repository = "https://github.com/habitus-eu/HabitusDocs"
 documentation = "https://TO-DO/"
-keywords = ["", "", ""]
+keywords = ["", ""]
 
 
 [tool.poetry.dependencies]

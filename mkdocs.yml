@@ -1,3 +1,76 @@
 site_name: Habitus
 theme:
   name: material
+  language: en
+  logo: assets/images/habitus_logo.png
+  favicon: assets/images/habitus_logo.png
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    # - navigation.sections
+    # - navigation.expand
+    - navigation.path
+    - toc.follow
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+
+nav:
+  - Habitus:
+      - home/index.md
+  - GUI:
+      - gui/index.md
+  - GIS:
+      - gis/index.md
+  - GPS:
+      - gps/index.md
+  - Examples:
+      - examples/index.md
+
+plugins:
+  - search
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/habitus-eu
+      name: Habitus on GitHub
+    - icon: fontawesome/solid/globe
+      link: https://www.sdu.dk/en/habitus
+      name: Habitus on SDU
+
+copyright: Copyright &copy; 2024 The Department of Sports Science and Clinical Biomechanics, University of Southern Denmark
+# markdown_extensions:
+#   - abbr
+#   - admonition
+#   - md_in_html
+#   - tables
+#   - pymdownx.caret
+#   - pymdownx.mark
+#   - pymdownx.tilde
+#   - pymdownx.details
+#   - pymdownx.emoji:
+#       emoji_index: !!python/name:material.extensions.emoji.twemoji
+#       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+#   - pymdownx.smartsymbols
