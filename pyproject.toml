@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "habitus-docs"
+version = "0.1.0"
+description = "Documentation for HABITUS"
+authors = ["Josef Heidler <jheidler@health.sdu.dk>"]
+maintainers = ["Josef Heidler <jheidler@health.sdu.dk>"]
+readme = "README.md"
+license = "LGPL-2.1-only"
+homepage = "https://TO-DO/"
+repository = "https://github.com/habitus-eu/HabitusDocs"
+documentation = "https://TO-DO/"
+keywords = ["", "", ""]
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+mkdocs-material = "^9.5.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
