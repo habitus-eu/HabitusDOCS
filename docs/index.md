@@ -1,6 +1,6 @@
 ## What is HABITUS?
 
-![University of Southern Denmark](/assets/images/sdu.png){ align=right width=400 }
+![University of Southern Denmark](assets/images/sdu.png){ align=right width=400 }
 
 Many people know *habitus* because of the French sociologist Pierre Bourdieu, who turned the concept into a cornerstone of his sociology. Bourdieu described that habitus refers to how individuals perceive the world around them and react to it, typically without thinking about their reaction. They react based on their previous experiences and preferences and what they perceive as socially appropriate behaviour in a particular social and spatial context.
 
