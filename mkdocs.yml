@@ -40,7 +40,7 @@ theme:
 nav:
   - Habitus:
       - Overview: index.md
-      - About: home/about.md
+      - About: about.md
   - HabitusGUI: gui/index.md
   - hbGIS: gis/index.md
   - hbGPS: gps/index.md
@@ -77,3 +77,4 @@ copyright: Copyright &copy; 2024 The Department of Sports Science and Clinical B
 markdown_extensions:
   - attr_list
   - md_in_html
+  - pymdownx.magiclink
