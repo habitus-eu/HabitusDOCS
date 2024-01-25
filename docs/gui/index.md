@@ -1,3 +1,11 @@
-# TO-DO HabitusGUI...
+# Get started
 
-HabitusGUI...
+## Overview
+
+## Installation
+
+## Contributing
+
+## License
+
+## Changelog
