@@ -39,7 +39,7 @@ theme:
 
 nav:
   - Habitus:
-      - Overview: home/overview.md
+      - Overview: index.md
       - About: home/about.md
   - HabitusGUI: gui/index.md
   - hbGIS: gis/index.md
