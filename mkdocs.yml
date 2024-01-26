@@ -28,22 +28,23 @@ theme:
     - navigation.tracking
     - navigation.tabs
     # - navigation.tabs.sticky
-    # - navigation.sections
+    - navigation.sections
     - navigation.expand
     - navigation.path
     - toc.follow
-    - toc.integrate
+    # - toc.integrate
     - navigation.top
     - search.suggest
     - navigation.footer
 
 nav:
   - Habitus:
-      - Overview: index.md
+      - index.md
+      - Resources: resources.md
       - About: about.md
   - HabitusGUI: gui/index.md
-  - hbGIS: gis/index.md
   - hbGPS: gps/index.md
+  - hbGIS: gis/index.md
   - Examples: examples/index.md
 
 plugins:
