@@ -1,1 +1,6 @@
-# TO-DO...
+---
+hide:
+  - navigation
+---
+
+TO-DO...

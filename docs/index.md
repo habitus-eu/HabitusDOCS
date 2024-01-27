@@ -19,6 +19,6 @@ The core functionality for merging and processing accelerometer and GPS data use
 
 ## HABITUS consists of three separate packages
 
-1. hbGPS
-2. hbGIS
-3. HabitusGUI
+1. **hbGPS** – package for GPS data processing and merging with accelerometer data.
+2. **hbGIS** – package for analyzing spatiotemporal behaviour patterns using geospatial data and data from hbGPS/PALMS.
+3. **HabitusGUI** – TO-DO...

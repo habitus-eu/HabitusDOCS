@@ -3,7 +3,7 @@ hide:
   - navigation
 ---
 
-R package that processes GPS data collected on human behavior and merges time series with GGIR package for accelerometer data. The package provides a pipeline that performs the following:
+R package for GPS data processing and merging with accelerometer data. The package provides a pipeline that performs the following:
 
 - Loading GPS CSV files, with the aim of making this process flexible to most common formats. 
 - Taking timezone into account when interpreting timestamps. 
@@ -33,9 +33,7 @@ If you want to use hbGPS to merge accelerometer and GPS data, you need to proces
 
 ### Processing accelerometer data with GGIR
 
-There are two pipelines available for processing accelerometer data with GGIR, depending on whether the data is in RAW accelerometer format or already in counts.
-
-For explanation of GGIR parameters and additional information on how to use the GGIR package, see the [documentation](https://cran.r-project.org/web/packages/GGIR/vignettes/GGIR.html).
+There are two pipelines available for processing accelerometer data with GGIR, depending on whether the data is in RAW accelerometer format or already in counts. For explanation of GGIR parameters and additional information on how to use the GGIR package, see the [documentation](https://cran.r-project.org/web/packages/GGIR/vignettes/GGIR.html).
 
 #### RAW data
 
@@ -77,9 +75,9 @@ GGIR(datadir = "C:/path/to/your/data/folder",
      overwrite = FALSE,
      do.report = c(2),
      windowsizes = c(1, 900, 3600),
-     threshold.lig = AccThresholds[1],
-     threshold.mod = AccThresholds[2],
-     threshold.vig = AccThresholds[3],
+     threshold.lig = acc_thresholds[1],
+     threshold.mod = acc_thresholds[2],
+     threshold.vig = acc_thresholds[3],
      extEpochData_timeformat = "%m/%d/%Y %H:%M:%S",
      do.neishabouricounts = TRUE,
      acc.metric = "NeishabouriCount_x",
@@ -145,8 +143,6 @@ hbGPS(gps_file = "C:/path_to_your_input_file/or/folder_with_files",
 
 The example of processing pipeline relies on counts accelerometer data from ActiGraph (CSV) and GPS data from Qstarz (CSV).
 
-You can download the sample data by clicking on the link provided [here]().
-
 ``` r
 library(GGIR)
 library(hbGPS)
@@ -167,10 +163,10 @@ GGIR(datadir = acc_input,
      overwrite = FALSE,
      do.report = c(2),
      windowsizes = c(1, 900, 3600),
-     threshold.lig = AccThresholds[1],
-     threshold.mod = AccThresholds[2],
-     threshold.vig = AccThresholds[3],
-     extEpochData_timeformat = "%m/%d/%Y %H:%M:%S",
+     threshold.lig = acc_thresholds[1],
+     threshold.mod = acc_thresholds[2],
+     threshold.vig = acc_thresholds[3],
+     extEpochData_timeformat = "%Y/%m/%d %H:%M:%S",
      do.neishabouricounts = TRUE,
      acc.metric = "NeishabouriCount_x",
      HASPT.algo = "NotWorn",
@@ -194,7 +190,7 @@ hbGPS(gps_file = gps_input,
       GGIRpath = ggir_output + "/meta/ms5.outraw",
       outputFormat = "PALMS",
       AccThresholds = acc_thresholds,
-      tz = "Australia/Perth",
+      tz = "Europe/Copenhagen",
       time_format = "%Y/%m/%d %H:%M:%S",
       idloc = 2,
       maxBreakLengthSeconds = 120,

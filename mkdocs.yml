@@ -47,7 +47,8 @@ nav:
   - HabitusGUI: gui/index.md
   - hbGPS: gps/index.md
   - hbGIS: gis/index.md
-  - Examples: examples/index.md
+  - Examples:
+      - A complete example: examples/complete.md
 
 plugins:
   - search
@@ -78,6 +79,7 @@ extra:
 
 copyright: Copyright &copy; 2024 The Department of Sports Science and Clinical Biomechanics, University of Southern Denmark
 markdown_extensions:
+  - admonition
   - attr_list
   - md_in_html
   - pymdownx.highlight:
@@ -88,3 +90,5 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.superfences
   - pymdownx.magiclink
+  - pymdownx.details
+  - tables
