@@ -56,7 +56,7 @@ GGIR(datadir = "C:/path/to/your/data/folder",
      boutdur.in = c(25, 30),
      ignorenonwear = FALSE,
      save_ms5rawlevels = TRUE,
-     save_ms5raw_without_invalid = FALSE
+     save_ms5raw_without_invalid = FALSE)
 ```
 
 #### Counts data
@@ -78,7 +78,7 @@ GGIR(datadir = "C:/path/to/your/data/folder",
      threshold.lig = acc_thresholds[1],
      threshold.mod = acc_thresholds[2],
      threshold.vig = acc_thresholds[3],
-     extEpochData_timeformat = "%m/%d/%Y %H:%M:%S",
+     extEpochData_timeformat = "%Y/%m/%d %H:%M:%S",
      do.neishabouricounts = TRUE,
      acc.metric = "NeishabouriCount_x",
      HASPT.algo = "NotWorn",
@@ -94,8 +94,7 @@ GGIR(datadir = "C:/path/to/your/data/folder",
      save_ms5rawlevels = TRUE,
      ignorenonwear = FALSE,
      HASPT.ignore.invalid = FALSE,
-     save_ms5raw_without_invalid = FALSE
-)
+     save_ms5raw_without_invalid = FALSE)
 ```
 
 1. Light (2500), moderate (10000), and vigorous PA (15000) thresholds.
@@ -182,8 +181,7 @@ GGIR(datadir = acc_input,
      save_ms5rawlevels = TRUE,
      ignorenonwear = FALSE,
      HASPT.ignore.invalid = FALSE,
-     save_ms5raw_without_invalid = FALSE
-)
+     save_ms5raw_without_invalid = FALSE)
 
 hbGPS(gps_file = gps_input,
       outputDir = hb_output,
@@ -198,7 +196,6 @@ hbGPS(gps_file = gps_input,
       minTripDist_m = 100,
       threshold_snr = 225,
       threshold_snr_ratio = 50) 
-
 ```
 
 ## License
