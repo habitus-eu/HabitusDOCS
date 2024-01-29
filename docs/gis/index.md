@@ -27,15 +27,42 @@ remotes::install_github("habitus-eu/hbGIS") # (3)!
 
 ## Usage
 
+TO-DO...Something like: Before you start you need to have linkage and configuration file with shape files...
+
+### Linkage file
+
+TO-DO...
+
+### Configuration file
+
+TO-DO...
+
+### Configuration
+
+| Parameter               | Description                                                                                                                                       |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `gisdir`                 | Option to find participant ID. More on methods of finding ID can be found in [GGIR documentation](https://cran.r-project.org/web/packages/GGIR/). |
+| `gislinkfile`              | Path to input file or folder.                                                                                                                     |
+| `outputdir`             | Path to output folder.                                                                                                                            |
+| `dataset_name`              | Path to GGIR output folder (ms5).                                                                                                                 |
+| `configfile`          | indoor-outdoor-vehicle.                                                                                                                           |
+| `baselocation`           | Correct [date and time format](https://sparkbyexamples.com/r-programming/dates-and-times-in-r/).                                                  |
+| `groupinglocation`                    | Timezone in which experiments took place [TZ identifier list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).                      |
+| `write_shp`         | Acceleration thresholds corresponding to the intensity levels.                                                                                    |
+| `split_GIS` | Maximum trip break duration in seconds.                                                                                                           |
+| `sublocationID`         | Minimum trip distance in meters.                                                                                                                  |
+
+### Example
+
 ``` r
 library(hbGIS)
 
-hbGIS(gisdir = "C:/path_to_your_input_gis_file/or/folder_with_gis_files",
-      palmsdir = "C:/path_to_your_hbgps_or_palms_output_folder",
-      gislinkfile = "C:/path_to_your_linkage_file/participant_basis.csv", # (1)! 
-      outputdir = "C:/path_to_your_output_folder",
+hbGIS(gisdir = "C:/path_to_input_gis_file/or/folder",
+      palmsdir = "C:/path_to_hbgps_or_palms_output_folder",
+      gislinkfile = "C:/path_to_linkage_file/participant_basis.csv", # (1)! 
+      outputdir = "C:/path_to_output_folder",
       dataset_name = "project_name",
-      configfile = "C:/path_to_your_config_file/participant_basis.csv", # (2)! 
+      configfile = "C:/path_to_config_file/palmsplus.csv", # (2)! 
       baselocation = "home", # (3)! 
       groupinglocation = "school", # (4)! 
       write_shp = FALSE, # (5)! 
@@ -54,14 +81,6 @@ hbGIS(gisdir = "C:/path_to_your_input_gis_file/or/folder_with_gis_files",
 !!! note
 
     GIS filenames are used as location names and at the moment the code can only handle names that are shorter than 6 characters.
-
-### Linkage file
-
-TO-DO...
-
-### Config file
-
-TO-DO...
 
 ## Output files
 
