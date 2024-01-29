@@ -39,9 +39,14 @@ Upon launching the HabitusGUI application, the user will be prompted to select t
 
 Once the user selects the desired analyses, a help menu appears on the screen. Depending on the selected analysis, the menu recommends suitable packages that are required for the analysis. The user can then modify the packages per the recommendations before proceeding with the analysis.
 
-In the following steps, the user must upload the required files, which may include datasets and [configuration files]() depending on the chosen analysis. Additionally, the user may be required to name the dataset.
+In the following steps, the user must upload the required files, which may include datasets and [configuration files]() depending on the chosen analysis. Additionally, the user may be required to name the dataset. {== TO-DO: Add configuration file ==}
+
+{== TO-DO: Pictures, finish information usage section. ==}
 
 ## Configuration files
+
+{== TO-DO: Added configuration example files. ==}
+
 Examples of configuration files to download include:
 
 1. GGIR (data in [RAW format](#) or in [counts](#))

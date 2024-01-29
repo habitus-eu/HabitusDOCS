@@ -30,6 +30,7 @@ remotes::install_github("habitus-eu/hbGIS") # (3)!
 Before using the hbGIS package to process spatiotemporal behaviour patterns, two additional files must be prepared: a linkage and configuration files.
 
 ### 1. Required files for hbGIS analysis
+
 #### Linkage file
 
 The linkage file is a CSV file that contains three specific columns:
@@ -40,21 +41,24 @@ The linkage file is a CSV file that contains three specific columns:
 | `school_id`          | For grouping spatiotemporal information. This means that the school shape (polygon) can be mapped to a group of participants.                     |
 | `class_id`           | For sub-grouping. Participants from the same school have separate results (class-based).                                                          |
 
-An example of a linkage file can be downloaded [here](#).
+An example of a linkage file can be downloaded [here](#). {== TO-DO: Add example file. ==}
 
 #### Configuration file
+
+TODO: Added some text.
 
 | Column             | Description                                                                                                                                       |
 | -------------------| ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `context`          | palmplusr fields tables (TO-DO: List of contexts...)                                                                                              |
 | `name`             | User specified name of formula                                                                                                                    |
 | `formula`          | Formula (see more at [palmsplur](https://thets.github.io/palmsplusr/articles/article-3-building-formulas.html))                                   |
-| `is_where_field`   | TO-DO..                                                                                                                                           |
-| `after_conversion` | TO-DO..                                                                                                                                           |
+| `is_where_field`   | {== TO-DO ==}                                                                                                                                           |
+| `after_conversion` | {== TO-DO ==}                                                                                                                                           |
 
-An example of a configuration file can be downloaded [here](#).
+An example of a configuration file can be downloaded [here](#). {== TO-DO: Add example file. ==}
 
 ### 2. Analysis
+
 #### Configuration
 
 | Parameter               | Description                                                                                                                                       |

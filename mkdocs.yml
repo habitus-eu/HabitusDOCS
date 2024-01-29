@@ -92,3 +92,8 @@ markdown_extensions:
   - pymdownx.magiclink
   - pymdownx.details
   - tables
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
