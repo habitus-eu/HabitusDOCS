@@ -27,60 +27,72 @@ remotes::install_github("habitus-eu/hbGIS") # (3)!
 
 ## Usage
 
-TO-DO...Something like: Before you start you need to have linkage and configuration file with shape files...
+Before using the hbGIS package to process spatiotemporal behaviour patterns, two additional files must be prepared: a linkage and configuration files.
 
-### Linkage file
+### 1. Required files for hbGIS analysis
+#### Linkage file
 
-TO-DO...
+The linkage file is a CSV file that contains three specific columns:
 
-### Configuration file
+| Column               | Description                                                                                                                                       |
+| ---------------------| ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `identifier`         | Used to identify a participant. This is necessary to link shape files with processed hbGPS output.                                                |
+| `school_id`          | For grouping spatiotemporal information. This means that the school shape (polygon) can be mapped to a group of participants.                     |
+| `class_id`           | For sub-grouping. Participants from the same school have separate results (class-based).                                                          |
 
-TO-DO...
+An example of a linkage file can be downloaded [here](#).
 
-### Configuration
+#### Configuration file
+
+| Column             | Description                                                                                                                                       |
+| -------------------| ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `context`          | palmplusr fields tables (TO-DO: List of contexts...)                                                                                              |
+| `name`             | User specified name of formula                                                                                                                    |
+| `formula`          | Formula (see more at [palmsplur](https://thets.github.io/palmsplusr/articles/article-3-building-formulas.html))                                   |
+| `is_where_field`   | TO-DO..                                                                                                                                           |
+| `after_conversion` | TO-DO..                                                                                                                                           |
+
+An example of a configuration file can be downloaded [here](#).
+
+### 2. Analysis
+#### Configuration
 
 | Parameter               | Description                                                                                                                                       |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `gisdir`                 | Option to find participant ID. More on methods of finding ID can be found in [GGIR documentation](https://cran.r-project.org/web/packages/GGIR/). |
-| `gislinkfile`              | Path to input file or folder.                                                                                                                     |
+| `gisdir`                | Path to input shape file or folder with shapes.                                                                                                   |
+| `palmsdir`              | Path to input file or folder (hbGPS/PALMS).                                                                                                       |
+| `gislinkfile`           | Path to linkage file.                                                                                                                             |
 | `outputdir`             | Path to output folder.                                                                                                                            |
-| `dataset_name`              | Path to GGIR output folder (ms5).                                                                                                                 |
-| `configfile`          | indoor-outdoor-vehicle.                                                                                                                           |
-| `baselocation`           | Correct [date and time format](https://sparkbyexamples.com/r-programming/dates-and-times-in-r/).                                                  |
-| `groupinglocation`                    | Timezone in which experiments took place [TZ identifier list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).                      |
-| `write_shp`         | Acceleration thresholds corresponding to the intensity levels.                                                                                    |
-| `split_GIS` | Maximum trip break duration in seconds.                                                                                                           |
-| `sublocationID`         | Minimum trip distance in meters.                                                                                                                  |
+| `dataset_name`          | User specified project name.                                                                                                                      |
+| `configfile`            | Path to configuration file.                                                                                                                       |
+| `baselocation`          | Base for individuals (leave empty if not available).                                                                                              |
+| `groupinglocation`      | Grouping for individuals (leave empty if not available).                                                                                          |
+| `write_shp`             | Store shape files as output.                                                                                                                      |
+| `split_GIS`             | Split GIS files in sublocations (only for public places).                                                                                         |
+| `sublocationID`         | Column name in GIS file to identify sublocation.                                                                                                  |
 
-### Example
+
+!!! note
+
+    GIS filenames are used as location names and at the moment the code can only handle names that are shorter than 6 characters.
+
+#### Example
 
 ``` r
 library(hbGIS)
 
 hbGIS(gisdir = "C:/path_to_input_gis_file/or/folder",
       palmsdir = "C:/path_to_hbgps_or_palms_output_folder",
-      gislinkfile = "C:/path_to_linkage_file/participant_basis.csv", # (1)! 
+      gislinkfile = "C:/path_to_linkage_file/participant_basis.csv",
       outputdir = "C:/path_to_output_folder",
       dataset_name = "project_name",
-      configfile = "C:/path_to_config_file/palmsplus.csv", # (2)! 
-      baselocation = "home", # (3)! 
-      groupinglocation = "school", # (4)! 
-      write_shp = FALSE, # (5)! 
-      split_GIS = TRUE, # (6)! 
-      sublocationID = "ID_NR") # (7)!
+      configfile = "C:/path_to_config_file/palmsplus.csv",
+      baselocation = "home",
+      groupinglocation = "school",
+      write_shp = FALSE, 
+      split_GIS = TRUE, 
+      sublocationID = "ID_NR")
 ```
-
-1. See more below (Linkage file).
-2. See more below (Config file).
-3. Base for individuals (leave empty if not available).
-4. Grouping for individuals (leave empty if not available).
-5. Option to store shape files as output.
-6. Option to split GIS files in sublocations (only for public places).
-7. Column name in GIS file to identify sublocation.
-
-!!! note
-
-    GIS filenames are used as location names and at the moment the code can only handle names that are shorter than 6 characters.
 
 ## Output files
 
