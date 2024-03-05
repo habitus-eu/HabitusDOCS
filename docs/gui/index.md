@@ -6,7 +6,7 @@ hide:
 HabitusGUI simplifies movement behaviour data analysis by combining GGIR, hbGPS, and hbGIS in a user-friendly interface with several analysis options that perform the following:
 
 1. Processing multi-day RAW accelerometer data for physical activity and sleep research (via [GGIR](https://cran.r-project.org/web/packages/GGIR/) package).
-2. Analyzing spatiotemporal behaviour patterns using geospatial data (via [hbGPS](/gps), [hbGIS](/gis)).
+2. Analyzing spatiotemporal behaviour patterns using geospatial data (via [hbGPS](../gps/index.md), [hbGIS](../gis/index.md)).
 
 
 ## Installation
@@ -20,6 +20,10 @@ remotes::install_github("habitus-eu/HabitusGUI", dependencies=TRUE) # (2)!
 
 1. R package for installation from remote repositories (Github).
 2. Installing the Habitus GUI package with all dependencies from the GitHub repository.
+
+!!! note
+
+    GIS filenames are used as location names and at the moment the code can only handle names that are shorter than 6 characters.
 
 ## Usage
 

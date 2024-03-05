@@ -48,7 +48,7 @@ nav:
   - hbGPS: gps/index.md
   - hbGIS: gis/index.md
   - Examples:
-      - A complete example: examples/complete.md
+      - HabitusGUI example: examples/habitus_complete.md
 
 plugins:
   - search
