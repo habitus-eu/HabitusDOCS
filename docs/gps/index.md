@@ -21,11 +21,19 @@ R package for GPS data processing and merging with accelerometer data. The packa
 install.packages("remotes") # (1)!
 remotes::install_github("wadpac/GGIR") # (2)!
 remotes::install_github("habitus-eu/hbGPS") # (3)!
+
+# Optional packages
+install.packages(pkgs = c("actilifecounts", "ActCR", "GGIRread", "read.gt3x", "readxl")) # (3)!
 ```
 
 1. R package for installation from remote repositories (Github).
-2. Installing GGIR package from GitHub repository.
-3. Installing hbGPS package from GitHub repository.
+2. Installing the GGIR package from GitHub repository.
+3. Installing the hbGPS package from GitHub repository.
+4. Install these packages to process accelerometer files in counts or use other GGIR functionalities.
+
+!!! warning
+
+    When installing packages, you may be prompted to update to more recent versions. We recommend updating all the packages.
 
 ## Usage
 

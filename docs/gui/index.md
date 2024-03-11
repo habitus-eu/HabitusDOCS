@@ -16,14 +16,18 @@ The [R language](https://cran.r-project.org/) must be installed as a prerequisit
 ``` r
 install.packages("remotes") # (1)!
 remotes::install_github("habitus-eu/HabitusGUI", dependencies=TRUE) # (2)!
+
+# Optional packages
+install.packages(pkgs = c("actilifecounts", "ActCR", "GGIRread", "read.gt3x", "readxl")) # (3)!
 ```
 
 1. R package for installation from remote repositories (Github).
-2. Installing the Habitus GUI package with all dependencies from the GitHub repository.
+2. Installing the actilifecounts package for processing accelerometer files in counts.
+3. Install these packages to process accelerometer files in counts or use other GGIR functionalities.
 
-!!! note
+!!! warning
 
-    GIS filenames are used as location names and at the moment the code can only handle names that are shorter than 6 characters.
+    When installing packages, you may be prompted to update to more recent versions. We recommend updating all the packages.
 
 ## Usage
 
@@ -43,16 +47,14 @@ Upon launching the HabitusGUI application, the user will be prompted to select t
 
 Once the user selects the desired analyses, a help menu appears on the screen. Depending on the selected analysis, the menu recommends suitable packages that are required for the analysis. The user can then modify the packages per the recommendations before proceeding with the analysis.
 
-In the following steps, the user must upload the required files, which may include datasets and [configuration files]() depending on the chosen analysis. Additionally, the user may be required to name the dataset. {== TO-DO: Add configuration file ==}
+In the following steps, the user must upload the required files, which may include datasets and [configuration files]() depending on the chosen analysis. Additionally, the user may be required to name the dataset.
 
 {== TO-DO: Pictures, finish information usage section. ==}
 
 ## Configuration files
 
-{== TO-DO: Added configuration example files. ==}
-
 Examples of configuration files to download include:
 
-1. GGIR (data in [RAW format](#) or in [counts](#))
-2. [hbGPS](#)
-3. [hbGIS](#)
+1. GGIR (data in [RAW format](../assets/configs/config_GGIR_raw.csv) or in [counts](../assets/configs/config_GGIR_counts.csv))
+2. [hbGPS](../assets/configs/config_hbGPS.csv)
+3. [hbGIS](../assets/configs/config_hbGIS.csv)

@@ -25,6 +25,10 @@ remotes::install_github("habitus-eu/hbGIS") # (3)!
 2. Installing GGIR package from GitHub repository.
 3. Installing hbGIS package from GitHub repository.
 
+!!! warning
+
+    When installing packages, you may be prompted to update to more recent versions. We recommend updating all the packages.
+
 ## Usage
 
 Before using the hbGIS package to process spatiotemporal behaviour patterns, two additional files must be prepared: a linkage and configuration files.
@@ -41,7 +45,7 @@ The linkage file is a CSV file that contains three specific columns:
 | `school_id`          | For grouping spatiotemporal information. This means that the school shape (polygon) can be mapped to a group of participants.                     |
 | `class_id`           | For sub-grouping. Participants from the same school have separate results (class-based).                                                          |
 
-An example of a linkage file can be downloaded [here](#). {== TO-DO: Add example file. ==}
+An example of a linkage file can be downloaded [here](../assets/linkage.csv).
 
 #### Configuration file
 
@@ -55,7 +59,7 @@ TODO: Added some text.
 | `is_where_field`   | {== TO-DO ==}                                                                                                                                           |
 | `after_conversion` | {== TO-DO ==}                                                                                                                                           |
 
-An example of a configuration file can be downloaded [here](#). {== TO-DO: Add example file. ==}
+An example of a configuration file can be downloaded [here](../assets/configs/config_hbGIS.csv).
 
 ### 2. Analysis
 

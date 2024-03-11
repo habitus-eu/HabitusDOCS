@@ -48,7 +48,7 @@ nav:
   - hbGPS: gps/index.md
   - hbGIS: gis/index.md
   - Examples:
-      - HabitusGUI example: examples/habitus_complete.md
+      - Spatiotemporal behaviour analysis: examples/spatiotemporal_behaviour_analysis.md
 
 plugins:
   - search
@@ -57,15 +57,13 @@ plugins:
       loop: false
       effect: zoom
       slide_effect: slide
-      width: 80%
+      width: 100%
       height: auto
       zoomable: true
-      draggable: true
-      skip_classes:
-        - custom-skip-class-name
+      draggable: false
       auto_caption: false
       caption_position: bottom
-      background: transparent
+      background: white
       shadow: true
 
 extra:
@@ -79,6 +77,7 @@ extra:
 
 copyright: Copyright &copy; 2024 The Department of Sports Science and Clinical Biomechanics, University of Southern Denmark
 markdown_extensions:
+  - abbr
   - admonition
   - attr_list
   - md_in_html
@@ -97,3 +96,6 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.tilde
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
