@@ -49,15 +49,15 @@ An example of a linkage file can be downloaded [here](../assets/linkage.csv).
 
 #### Configuration file
 
-TODO: Added some text.
+To use hbGIS, a configuration file must be provided. Further information on processing and the configuration file can be found [here](https://github.com/habitus-eu/hbGIS/blob/main/documentation.md).
 
 | Column             | Description                                                                                                                                       |
 | -------------------| ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `context`          | palmplusr fields tables (TO-DO: List of contexts...)                                                                                              |
 | `name`             | User specified name of formula                                                                                                                    |
 | `formula`          | Formula (see more at [palmsplur](https://thets.github.io/palmsplusr/articles/article-3-building-formulas.html))                                   |
-| `is_where_field`   | {== TO-DO ==}                                                                                                                                           |
-| `after_conversion` | {== TO-DO ==}                                                                                                                                           |
+| `is_where_field`   |                                                                                                                                         |
+| `after_conversion` |                                                                                                                                          |
 
 An example of a configuration file can be downloaded [here](../assets/configs/config_hbGIS.csv).
 
