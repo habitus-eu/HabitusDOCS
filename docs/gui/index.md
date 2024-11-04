@@ -47,13 +47,12 @@ HabitusGUI::myApp(homedir="C:/path_to_project/folder") # (2)!
 1. Ignore evolution warnings.
 2. A directory that contains all necessary data in its root or subdirectories.
 
-Upon launching the HabitusGUI application, the user will be prompted to select the data sets they want to analyze. The user has the option to choose one or multiple input data sets.
+Upon launching the HabitusGUI application, the user will be prompted to select the desired analyses ([Figure 1](#figure-1)). For more information on how to use HabitusGUI, please refer to the provided [example](../examples/spatiotemporal_behaviour_analysis.md).
 
-Once the user selects the desired analyses, a help menu appears on the screen. Depending on the selected analysis, the menu recommends suitable packages that are required for the analysis. The user can then modify the packages per the recommendations before proceeding with the analysis.
-
-In the following steps, the user must upload the required files, which may include datasets and configuration files depending on the chosen analysis. Additionally, the user may be required to name the dataset.
-
-{== TO-DO: Pictures, finish information usage section. ==}
+<figure markdown="span" id="figure-1">
+  ![Selecting analysis type and required packages](../assets/images/selecting_analysis.png){ width="500" }
+  <figcaption><strong>Figure 1</strong> Selecting analysis type and required packages</figcaption>
+</figure>
 
 ## Configuration files
 

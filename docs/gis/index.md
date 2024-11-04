@@ -55,21 +55,17 @@ An example of a linkage file can be downloaded [here](../assets/linkage.csv).
 
 #### Configuration file
 
-This describes the *configfile* as a tool that bridges the gap between hbGIS settings and the older *palmsplusr* configuration.
+To use hbGIS, a configuration file must be provided. Further information on processing and the configuration file can be found [here](https://github.com/habitus-eu/hbGIS/blob/main/documentation.md).
 
 | Column             | Description                                                                                                                                       |
 | -------------------| ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `context`          | palmplusr fields tables (TO-DO: List of contexts...)                                                                                              |
 | `name`             | User specified name of formula                                                                                                                    |
 | `formula`          | Formula (see more at [palmsplur](https://thets.github.io/palmsplusr/articles/article-3-building-formulas.html))                                   |
-| `is_where_field`   | Whether to calculate summaries or not based on where_fields (GIS locations).                                                                      |
-| `after_conversion` | wheter to apply formulas to points or linestrings.                                                                                                |
+| `is_where_field`   |                                                                                                                                         |
+| `after_conversion` |                                                                                                                                          |
 
 An example of a configuration file can be downloaded [here](https://github.com/habitus-eu/HabitusGUI/blob/main/inst/testfiles_hbGIS/config_hbGIS.csv).
-
-!!! note
-    To learn more about setting up the *configfile*, refer to the [Description of R package hbGIS page](https://github.com/habitus-eu/hbGIS/blob/add_narrative_documentation/documentation.md).
-
 
 ### 2. Analysis
 
