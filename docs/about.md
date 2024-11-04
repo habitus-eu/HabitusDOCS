@@ -1,7 +1,3 @@
-## Contact
-
-If you are interested in using HABITUS or contributing to its development, please email [Jasper Schipperijn](mailto:habitus@sdu.dk).
-
 ## Development
 
-As with any open-source software, HABITUS is a work in progress. We will keep developing it for our projects and needs, and we are always keen to collaborate with others, integrate new functionality, and improve existing functions.
+HABITUS has so far been developed to meet our own project needs. Code has been developed by [Vincent van Hees](https://accelting.com/). As we move forward we may encounter opportunities to enhance the functionality. If you have ideas for enhancements or encounter issues please report them to us [here](https://github.com.mcas.ms/habitus-eu/HabitusGUI/issues). If you would like to contribute and/or collaborate pplease email [Jasper Schipperijn](mailto:habitus@sdu.dk). Finally, if you use the HABITUS please make sure you cite the software names and version numbers that you used.

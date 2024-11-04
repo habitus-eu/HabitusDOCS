@@ -3,6 +3,10 @@ hide:
   - navigation
 ---
 
+!!! note
+
+    The package repository is available [here](https://github.com.mcas.ms/habitus-eu/hbGPS). For technical details, please refer to the [description](https://github.com.mcas.ms/habitus-eu/hbGPS/blob/main/documentation.md).
+
 R package for GPS data processing and merging with accelerometer data. The package provides a pipeline that performs the following:
 
 - Loading GPS CSV files, with the aim of making this process flexible to most common formats. 

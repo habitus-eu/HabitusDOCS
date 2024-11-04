@@ -3,6 +3,10 @@ hide:
   - navigation
 ---
 
+!!! note
+
+    The package repository is available [here](https://github.com.mcas.ms/habitus-eu/hbGIS). For technical details, please refer to the [description](https://github.com.mcas.ms/habitus-eu/hbGIS/blob/main/documentation.md).
+
 R package for analyzing spatiotemporal behaviour patterns using geospatial data and output from hbGPS or PALMS. Inspired by [palmsplusr](https://thets.github.io/palmsplusr), hbGIS offers features to answer questions about when, where, and what:
 
 - How much time participants spend in parks?
@@ -42,24 +46,30 @@ The linkage file is a CSV file that contains three specific columns:
 | Column               | Description                                                                                                                                       |
 | ---------------------| ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `identifier`         | Used to identify a participant. This is necessary to link shape files with processed hbGPS output.                                                |
-| `school_id`          | For grouping spatiotemporal information. This means that the school shape (polygon) can be mapped to a group of participants.                     |
-| `class_id`           | For sub-grouping. Participants from the same school have separate results (class-based).                                                          |
+| `x_id`          | This approach organizes data based on both location and time. For instance, a school building (represented as a polygon) can be linked to a group of students (identified by a school_id). Additionally, you can create further groupings within the data (e.g., by class_id). |
+
+!!! note
+    The *gislinkagefile* requires one or more columns containing location IDs, named with the suffix "_id". For instance, a column named "school_id" would connect entries (identifiers) to schools.
 
 An example of a linkage file can be downloaded [here](../assets/linkage.csv).
 
 #### Configuration file
 
-TODO: Added some text.
+This describes the *configfile* as a tool that bridges the gap between hbGIS settings and the older *palmsplusr* configuration.
 
 | Column             | Description                                                                                                                                       |
 | -------------------| ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `context`          | palmplusr fields tables (TO-DO: List of contexts...)                                                                                              |
 | `name`             | User specified name of formula                                                                                                                    |
 | `formula`          | Formula (see more at [palmsplur](https://thets.github.io/palmsplusr/articles/article-3-building-formulas.html))                                   |
-| `is_where_field`   | {== TO-DO ==}                                                                                                                                           |
-| `after_conversion` | {== TO-DO ==}                                                                                                                                           |
+| `is_where_field`   | Whether to calculate summaries or not based on where_fields (GIS locations).                                                                      |
+| `after_conversion` | wheter to apply formulas to points or linestrings.                                                                                                |
 
-An example of a configuration file can be downloaded [here](../assets/configs/config_hbGIS.csv).
+An example of a configuration file can be downloaded [here](https://github.com/habitus-eu/HabitusGUI/blob/main/inst/testfiles_hbGIS/config_hbGIS.csv).
+
+!!! note
+    To learn more about setting up the *configfile*, refer to the [Description of R package hbGIS page](https://github.com/habitus-eu/hbGIS/blob/add_narrative_documentation/documentation.md).
+
 
 ### 2. Analysis
 
@@ -124,4 +134,4 @@ hbGIS will generate four output files.
 
 ## License
 
-This project is licensed under the terms of the Apache License 2.0.
+This project is licensed under the terms of the GNU Lesser General Public License v2.1.

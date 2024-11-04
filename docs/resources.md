@@ -1,3 +1,11 @@
+## HABITUS applications
+
+1. [GGIR](https://wadpac.github.io/GGIR/) – Processing multi-day RAW accelerometer data for physical activity and sleep research.
+1. [hbGPS](gps/index.md) – GPS data processing and merging with accelerometer data. [[repository](https://github.com.mcas.ms/habitus-eu/hbGPS) | [description](https://github.com.mcas.ms/habitus-eu/hbGPS/blob/main/documentation.md)]
+2. [hbGIS](gis/index.md) – Spatiotemporal behaviour patterns abalysis using geospatial data and data from hbGPS/PALMS. [[repository](https://github.com.mcas.ms/habitus-eu/hbGIS) | [description](https://github.com.mcas.ms/habitus-eu/hbGIS/blob/main/documentation.md)]
+3. [HabitusGUI](gui/index.md) – Simplified movement behaviour data analysis by combining GGIR, hbGPS, and hbGIS in a user-friendly interface. [[repository](https://github.com.mcas.ms/habitus-eu/HabitusGUI)]
+4. Docs – Habitus documentation web. [[repository](https://github.com.mcas.ms/habitus-eu/docs)]
+
 ## Alternatives
 
 Links to other accelerometer or GPS data processing software tools:
@@ -8,18 +16,24 @@ Links to other accelerometer or GPS data processing software tools:
 - [Health Behavior in Space](https://github.com/dsalvolab/hbspace) by Deborah Salvo and colleagues
 - [PyActigraphy](https://ghammad.github.io/pyActigraphy/index.html) by Grégory Hammad and colleagues
 
-## Learning resources
+## Theory and other resource materials
+
+### Learning resources
 
 The materials from presentations and courses will be made available here.
 
 - [Presentation](https://research.idi.ntnu.no/nordic-pabs-2022/presentations/10_Adding_context_to_accelerometer_data_using_GPS_devices_JS.pdf) by Jasper Schipperijn at the [Nordic Seminar on Technical Measurements of Physical Activity and Sedentary Behaviour](https://research.idi.ntnu.no/nordic-pabs-2022/), June 2 and 3, 2022, in Trondheim, Norway.
 - [Presentation](https://www.sdu.dk/-/media/files/om_sdu/institutter/iob/forskningsenheder/active+living/habitus/habitus-presentation-icampan-2022.pdf) by Jasper Schipperijn at the [ICAMPAM](https://ismpb.org/icampam/): Juni 21-24, 2022.
 
-## Publications
+### Publications
 
 We have created a comprehensive list of references and DOI links to papers practical when dealing with combined accelerometer and GPS data. If you know of any papers that should be included in this list, please email us with the reference (including the DOI link) to our contact [email address](mailto:habitus@sdu.dk).
 
-### Conceptual and methodological papers
+#### Accelerometry
+
+Migueles, J. H., Rowlands, A. V., Huber, F., Sabia, S., & Hees, V. T. van. (2019). GGIR: A Research Community–Driven Open Source R Package for Generating Physical Activity and Sleep Outcomes From Multi-Day Raw Accelerometer Data. https://journals.humankinetics.com/view/journals/jmpb/2/3/article-p188.xml
+
+#### Conceptual and methodological papers
 
 Jankowska, M. M., Schipperijn, J., & Kerr, J. (2015). A Framework for Using GPS Data in Physical Activity and Sedentary Behavior Studies. *Exercise and Sport Sciences Reviews, 43*(1), 48–56. https://doi.org/10.1249/JES.0000000000000035
 
@@ -31,7 +45,7 @@ Schmidt, T., Kerr, J., Kestens, Y., & Schipperijn, J. (2019). Challenges in usin
 
 Stewart, T., Schipperijn, J., Snizek, B., & Duncan, S. (2017). Adolescent school travel: Is online mapping a practical alternative to GPS-assessed travel routes? *Journal of Transport & Health, 5*, 113–122. https://doi.org/10.1016/j.jth.2016.10.001
 
-### Review papers
+#### Review papers
 
 Krenn, P. J., Titze, S., Oja, P., Jones, A., & Ogilvie, D. (2011). Use of Global Positioning Systems to Study Physical Activity and the Environment. *American Journal of Preventive Medicine, 41*(5), 508–515. https://doi.org/10.1016/j.amepre.2011.06.046
 
@@ -40,11 +54,11 @@ McCrorie, P. R., Fenton, C., & Ellaway, A. (2014). Combining GPS, GIS, and accel
 Yi, L., Wilson, J. P., Mason, T. B., Habre, R., Wang, S., & Dunton, G. F. (2019). Methodologies for assessing contextual exposure to the built environment in physical activity studies: *A systematic review. Health & Place, 60*, 102226. https://doi.org/10.1016/j.healthplace.2019.102226
 
 
-### Validation papers
+#### Validation papers
 
 Schipperijn, J., Kerr, J., Duncan, S., Madsen, T., Klinker, C. D., & Troelsen, J. (2014). Dynamic Accuracy of GPS Receivers for Use in Health Research: A Novel Method to Assess GPS Accuracy in Real-World Settings. *Frontiers in Public Health, 2*. https://doi.org/10.3389/fpubh.2014.00021
 
-### Examples of studies that have used combined accelerometer and GPS data
+#### Examples of studies that have used combined accelerometer and GPS data
 
 Alberico, C. O., Schipperijn, J., & Reis, R. S. (2017). Use of global positioning system for physical activity research in youth: ESPAÇOS Adolescentes, Brazil. *Preventive Medicine, 103*, S59–S65. https://doi.org/10.1016/j.ypmed.2016.12.026
 

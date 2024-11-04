@@ -3,6 +3,10 @@ hide:
   - navigation
 ---
 
+!!! note
+
+    The package repository is available [here](https://github.com.mcas.ms/habitus-eu/HabitusGUI).
+
 HabitusGUI simplifies movement behaviour data analysis by combining GGIR, hbGPS, and hbGIS in a user-friendly interface with several analysis options that perform the following:
 
 1. Processing multi-day RAW accelerometer data for physical activity and sleep research (via [GGIR](https://cran.r-project.org/web/packages/GGIR/) package).
@@ -47,7 +51,7 @@ Upon launching the HabitusGUI application, the user will be prompted to select t
 
 Once the user selects the desired analyses, a help menu appears on the screen. Depending on the selected analysis, the menu recommends suitable packages that are required for the analysis. The user can then modify the packages per the recommendations before proceeding with the analysis.
 
-In the following steps, the user must upload the required files, which may include datasets and [configuration files]() depending on the chosen analysis. Additionally, the user may be required to name the dataset.
+In the following steps, the user must upload the required files, which may include datasets and configuration files depending on the chosen analysis. Additionally, the user may be required to name the dataset.
 
 {== TO-DO: Pictures, finish information usage section. ==}
 
@@ -55,6 +59,6 @@ In the following steps, the user must upload the required files, which may inclu
 
 Examples of configuration files to download include:
 
-1. GGIR (data in [RAW format](../assets/configs/config_GGIR_raw.csv) or in [counts](../assets/configs/config_GGIR_counts.csv))
-2. [hbGPS](../assets/configs/config_hbGPS.csv)
-3. [hbGIS](../assets/configs/config_hbGIS.csv)
+1. [GGIR (data in RAW format or counts)](https://github.com/habitus-eu/HabitusGUI/blob/main/inst/testfiles_ggir/example_config_files_GGIR.zip)
+2. [hbGPS](https://github.com/habitus-eu/HabitusGUI/blob/main/inst/testfiles_hbGPS/config_hbGPS.csv)
+3. [hbGIS](https://github.com/habitus-eu/HabitusGUI/blob/main/inst/testfiles_hbGIS/config_hbGIS.csv)
